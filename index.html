@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eFootStore</title>
+    <link rel="icon" href="efootstore_32x32.png" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+</head>
+<body style="background-color: #000d33; font-family: 'Cairo', sans-serif;">
+  <!-- شاشة التحميل -->
+  <div class="loader" id="loader">
+    <img src="efootstore.png" alt="eFootStore Logo">
+  </div>
+
+
+
+  <!-- محتوى الموقع -->
+
+<!-- ======= Navbar ======= -->
+<!-- ======= Navbar Section ======= -->
+<!-- ======= شريط التنقل ======= -->
+<nav class="navbar navbar-expand-lg fixed-top shadow custom-navbar">
+  <div class="container-fluid px-3">
+    <a class="navbar-brand d-flex align-items-center" href="#home">
+      <img src="efootstore.png" alt="Logo" height="38" class="me-2" style="border-radius: 8px;">
+    </a>
+
+    <!-- زر القائمة في الموبايل -->
+    <button class="navbar-toggler border-0 d-lg-none custom-hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="تبديل القائمة">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    <!-- روابط النافبار -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav gap-lg-2">
+        <li class="nav-item"><a class="nav-link text-white" href="test.html">الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#cards-section">المتجر</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#sell-request">بيع حساب</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#mediation">الوساطة</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#footer">التواصل</a></li>
+       
+
+        <!-- زر القائمة المنسدلة -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            المزيد
+          </a>
+          <ul class="dropdown-menu" style="background-color: #180b44;" aria-labelledby="navbarDropdown">
+         <li class="nav-item"><a class="nav-link text-white" href="سياسة الاستخدام.html">سياسة الاستخدام</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="من نحن.html">من نحن</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="الشروط والاحكام.html">الشروط</a></li>  
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- زر شراء -->
+    <a href="#cards-section" class="btn btn-warning fw-bold ms-2 d-none d-lg-block custom-buy-btn">شراء الآن!</a>
+  </div>
+</nav>
+
+
+<!-- ======= Home Section ======= -->
+<!-- ======= قسم الصفحة الرئيسية ======= -->
+<section class="home-section d-flex align-items-center justify-content-center" id="home" style="min-height: 100vh; background: linear-gradient(120deg, #1c0f4500 0%, #00005627 100%), url('eFootball-2025-Large-Size-Image-1.jpeg') center center/cover no-repeat; position: relative; overflow: hidden; margin-top: 50px;">
+  <div style="position: absolute; inset: 0; background: rgba(17, 17, 34, 0.637); z-index: 1; pointer-events: none;"></div>
+  <div class="container" style="position: relative; z-index: 2;"></div>
+  <div class="row justify-content-center align-items-center min-vh-75">
+    <div style="z-index: 10;" class="col-12 col-md-10 col-lg-8 text-center">
+    <h1 class="display-5 fw-bold mb-3 home-title">
+      مرحبا بكم في <span class="brand-highlight">eFootStore</span><br>
+      متجر حسابات <span style="color: #3d3df0d2;">eFootball</span> 
+    </h1>
+    <h3 class="lead mb-4 home-desc">
+      في <strong>eFootStore</strong> نقدم لك أحدث وأفضل حسابات <strong>eFootball</strong> مع ضمان كامل ومصداقية عالية.<br>
+      نحن وسيط موثوق بين البائعين والمشترين داخل المغرب وخارجه، ونوفر وسائل دفع آمنة ومتنوعة مثل <strong>PayPal</strong> و<strong>WafaCash</strong> و<strong>Orange Money</strong>.<br>
+      هدفنا تسهيل عملية شراء وبيع الحسابات بسرعة وسلاسة، مع دعم فني متواصل لضمان رضاك التام.<br>
+      انضم إلينا اليوم واستمتع بأفضل الأسعار وأسرع خدمة تسليم!
+    </h3>
+    <a href="#cards-section" class="btn btn-lg btn-gradient px-5 py-3 shadow-sm mt-2">شراء الان!</a>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<!-- ======= Special Offer Section ======= -->
+<!-- ======= عرض خاص ======= -->
+<section class="profit-section" style="direction: rtl; font-family: 'Cairo', sans-serif; padding: 50px; background:#0f172a; color:#f8fafc;" data-aos="fade-up" data-aos-duration="1200">
+  <div data-aos="fade-up" data-aos-duration="1200" class="container text-center">
+
+    <!-- عنوان العرض -->
+    <h2 class="mb-3" style="color:#38bdf8;">🌟 عرض خاص ومحدود على eFootStore!</h2>
+    <p class="mb-5" style="color:#e2e8f0; font-size:1.1rem;">🔥 لفترة قصيرة فقط: اربح 100% من سعر بيع حسابك وخدمات الوساطة! 🔥</p>
+
+    <!-- العد التنازلي -->
+    <div class="mb-5">
+      <h5 style="color:#ff6f61;">⏳ ينتهي العرض خلال:</h5>
+      <div id="countdown" class="d-flex justify-content-center gap-3 mt-2" style="font-size:1.2rem; color:#ffc107;"></div>
+    </div>
+
+    <!-- الكروت -->
+    <div class="row justify-content-center g-4">
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="profit-card card-style-1 p-5 h-100 text-center">
+          <div class="icon">💰</div>
+          <h4 class="mt-3 mb-2">بعد انتهاء العرض</h4>
+          <p>ثمن البيع بين 100 و130 درهم</p>
+          <p>ربحنا: 10% من سعر البيع</p>
+          
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="profit-card card-style-2 p-5 h-100 text-center">
+          <div class="icon">🏆</div>
+          <h4 class="mt-3 mb-2">بعد انتهاء العرض</h4>
+          <p>ثمن البيع أكثر من 150 درهم</p>
+          <p>ربحنا: 15% من سعر البيع</p>
+          
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="profit-card card-style-3 p-5 h-100 text-center">
+          <div class="icon">📈</div>
+          <h4 class="mt-3 mb-2">بعد انتهاء العرض</h4>
+          <p>ثمن البيع أقل من 100 درهم</p>
+          <p>ربحنا: 5% من سعر البيع</p>
+          
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+        <div class="profit-card card-style-4 p-5 h-100 text-center">
+          <div class="icon">💎</div>
+          <h4 class="mt-3 mb-2">بعد انتهاء العرض</h4>
+          <p>ثمن البيع أقل من 50 درهم</p>
+          <p>ربحنا: 3% من سعر البيع</p>
+          
+        </div>
+      </div>
+
+    
+
+  </div>
+</section>
+
+
+
+<!-- ======= Why eFootStore Section ======= -->
+<!-- ======= لماذا eFootStore ======= -->
+ 
+
+<section id="services" class="services" style="padding: 60px 0; background: #111;">
+   <div style="text-align: center; margin-bottom: 40px;">
+  <h1 style="font-size: 2.5rem; color: #ffd700;">لماذا eFootStore</h1>
+  </div>
+<div class="cards-wrap">
+
+  <!-- decorative strokes -->
+  <span class="stroke left-1" aria-hidden="true"></span>
+  <span class="stroke left-2" aria-hidden="true"></span>
+  <span class="stroke left-3" aria-hidden="true"></span>
+
+  <span class="stroke right-1" aria-hidden="true"></span>
+  <span class="stroke right-2" aria-hidden="true"></span>
+  <span class="stroke right-3" aria-hidden="true"></span>
+
+  <!-- Left card -->
+  <div data-aos="fade-up-right" class="card left" role="article" aria-label="Designing card">
+    <div class="icon-wrap" aria-hidden="true">
+      <!-- brush icon (SVG) -->
+      <img src="icon/quality.png" alt="" style="width: 50px; margin-bottom: 15px;">
+    </div>
+
+    <h3>جودة لا مثيل لها</h3>
+    <p> خدمة احترافية، منصة مستقرة، وكود نظيف يحمي حقوقك ويضمن سلامة الحسابات. </p>
+
+    
+  </div>
+
+  <!-- Center card -->
+  <div data-aos="fade-up" class="card center" role="article" aria-label="Development card">
+    <div class="center-top"></div>
+
+    <div class="icon-wrap" aria-hidden="true" style="border-color: rgba(0,0,0,0.25);">
+      <!-- code icon -->
+       <img src="icon/web-design.png" alt="" style="width: 50px; margin-bottom: 15px;">
+    </div>
+
+    <h3>تصميم يجذب الأنظار</h3>
+    <p>واجهة عصرية، متجاوبة وسهلة التصفح تعكس احترافية مشروعك. </p>
+
+    
+
+    <div class="center-bottom"></div>
+  </div>
+
+  <!-- Right card -->
+  <div data-aos="fade-up-left" class="card right" role="article" aria-label="SEO card">
+    <div class="icon-wrap" aria-hidden="true">
+      <!-- magnifier icon -->
+      <img src="icon/fast(1).png" alt="" style="width: 50px; margin-bottom: 15px;">
+    </div>
+
+    <h3>سرعة وفعالية</h3>
+    <p>خدماتنا سريعة، آمنة، وتشمل كل ما تحتاجه في منصة واحدة.</p>
+
+    
+  </div>
+
+</div>
+
+</section>
+
+
+
+<!-- ======= Accounts Cards Section ======= -->
+<!-- ======= الحسابات المعروضة ======= -->
+<section class="cards-section" id="cards-section" style="background: #090f1f; color: #f0f0f0; padding: 50px 20px;">
+  <div class="accounts_h1">
+  <h1>الحسابات</h1>
+  </div>
+  <div class="acounts">
+  <!-- كرر الكارت حسب الحاجة -->
+  <div class="account-card" data-aos="fade-up">
+    <img src="contact img/account2.jpeg" alt="حساب eFootball" class="card-img">
+    <div class="card-info">
+    <h2>لا توجد حسابات معروضة حالياً.</h2>
+    <ul>
+      <li>ربط: غير متوفر حالياً</li>
+      <li>لا يوجد حساب معروض بعد</li>
+      <li>اطلب بيع حسابك قبل ما يتم ملء المكان✅</li>
+    </ul>
+    <p class="price">السعر: 00 درهم</p>
+    <a href="#طلب" class="order-btn">اطلب الآن</a>
+    <button class="view-img-btn" onclick="showPopup('contact img/account1.jpeg')">تكبير الصورة</button>
+    </div>
+  </div>
+ <!--
+  <div class="account-card" data-aos="fade-up">
+    <img src="contact img/account2.jpeg" alt="حساب eFootball" class="card-img">
+    <div class="card-info">
+    <h2>لا توجد حسابات معروضة حالياً.</h2>
+    <ul>
+      <li>ربط: غير متوفر حالياً</li>
+      <li>لا يوجد حساب معروض بعد</li>
+      <li>اطلب بيع حسابك قبل ما يتم ملء المكان✅</li>
+    </ul>
+    <p class="price">السعر: 150 درهم</p>
+    <a href="#طلب" class="order-btn">اطلب الآن</a>
+    <button class="view-img-btn" onclick="showPopup('contact img/account1.jpeg')">تكبير الصورة</button>
+    </div>
+  </div>
+
+
+
+  <div class="account-card" data-aos="fade-up">
+    <img src="contact img/account2.jpeg" alt="حساب eFootball" class="card-img">
+    <div class="card-info">
+    <h2>لا توجد حسابات معروضة حالياً.</h2>
+    <ul>
+      <li>ربط: غير متوفر حالياً</li>
+      <li>لا يوجد حساب معروض بعد</li>
+      <li>اطلب بيع حسابك قبل ما يتم ملء المكان✅</li>
+    </ul>
+    <p class="price">السعر: 150 درهم</p>
+    <a href="#طلب" class="order-btn">اطلب الآن</a>
+    <button class="view-img-btn" onclick="showPopup('contact img/account1.jpeg')">تكبير الصورة</button>
+    </div>
+  </div>
+
+
+
+  <div class="account-card" data-aos="fade-up">
+    <img src="contact img/account2.jpeg" alt="حساب eFootball" class="card-img">
+    <div class="card-info">
+    <h2>لا توجد حسابات معروضة حالياً.</h2>
+    <ul>
+      <li>ربط: غير متوفر حالياً</li>
+      <li>لا يوجد حساب معروض بعد</li>
+      <li>اطلب بيع حسابك قبل ما يتم ملء المكان✅</li>
+    </ul>
+    <p class="price">السعر: 150 درهم</p>
+    <a href="#طلب" class="order-btn">اطلب الآن</a>
+    <button class="view-img-btn" onclick="showPopup('contact img/account1.jpeg')">تكبير الصورة</button>
+    </div>
+  </div>
+
+-->
+
+  <!-- ... باقي الكروت ... -->
+  </div>
+</section>
+
+
+<!-- ======= How to Buy/Sell Section ======= -->
+<!-- ======= كيف تبيع أو تشتري حساب ======= -->
+<section id="how-to" style="background: #121212; color: #f0f0f0; padding: 50px 20px;">
+  <div style="max-width: 900px; background: #1e1e1e; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" data-aos="fade-up">
+  <h2 style="text-align: center; color: #00bcd4; font-size: 32px; margin-bottom: 25px;" data-aos="zoom-in">
+    كيف تبيع أو تشتري حساب على eFootstore؟
+  </h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+    <div style="flex: 1 1 300px; min-width: 280px;" data-aos="fade-left">
+    <h3 style="color: #00e5ff; margin-bottom: 15px;">طريقة البيع:</h3>
+    <ol style="line-height: 2; padding-right: 20px; font-size: 18px;">
+      <li>عرض حسابك للبيع عن طريق ملء نموذج البيع.</li>
+      <li>تحديد السعر والمعلومات المهمة عن الحساب.</li>
+      <li>انتظار الموافقة ثم نشر العرض في الموقع.</li>
+      <li>التواصل مع المشترين المهتمين.</li>
+      <li>إتمام الصفقة بأمان من خلال خدمة الوساطة إن رغبت.</li>
+    </ol>
+    </div>
+    <div style="flex: 1 1 300px; min-width: 280px;" data-aos="fade-up">
+    <h3 style="color: #00e5ff; margin-bottom: 15px;">طريقة الشراء:</h3>
+    <ol style="line-height: 2; padding-right: 20px; font-size: 18px;">
+      <li>تصفح العروض واختر الحساب المناسب لك.</li>
+      <li>التواصل مع المشرفين على عمليات لبيع عبر ضغط على زر شراء.</li>
+      <li>اتفاق الطرفان على السعر وشروط البيع.</li>
+      <li>استلام الحساب والتأكد من البيانات.</li>
+      <li>إتمام الدفع بثقة وأمان.</li>
+    </ol>
+    </div>
+    <div style="flex: 1 1 300px; min-width: 280px; display: flex; flex-direction: column; align-items: center; justify-content: center;" data-aos="fade-right">
+    <h3 style="color: #00e5ff; margin-bottom: 15px;">شاهد الشرح بالفيديو:</h3>
+    <div style="width: 100%; aspect-ratio: 16 / 9; background: #333; border-radius: 10px; overflow: hidden;">
+      <iframe width="100%" height="100%" src="طريقة البيع.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+<!-- ======= Image Popup ======= -->
+<!-- ======= نافذة الصورة المكبرة ======= -->
+<div id="img-popup" class="popup" onclick="hidePopup()">
+  <img id="popup-img" src="" alt="صورة مكبرة">
+</div>
+
+
+<!-- ======= Sell Request Section ======= --><section id="sell-request" 
+         style="direction: rtl; font-family: 'Cairo', sans-serif; padding: 50px; background: #0f172a; color: #f8fafc;"
+         data-aos="fade-up" data-aos-duration="1200">
+  <div style="max-width: 900px; background: #14181e; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+    
+    <h2 style="text-align: center; color: #38bdf8; font-size: 30px; margin-bottom: 20px;">
+      💼 طلب بيع حساب eFootball
+    </h2>
+
+    <p style="font-size: 18px; margin: 20px 0; line-height: 1.7; color: #e2e8f0;">
+      مع <strong style="color: #38bdf8;">eFootStore</strong> يمكنك بيع حسابك بكل أمان واحترافية! فقط املأ المعلومات، وسنتواصل معك لإتمام العملية بأفضل طريقة.
+    </p>
+
+    <h3 style="margin-top: 30px; color: #60a5fa; text-align: center;">📋 معلومات الحساب المطلوبة:</h3>
+
+ 
+
+    <h3 style="margin-top: 30px; color: #60a5fa; text-align: center;">📝 نموذج الطلب:</h3>
+    <form action="https://formspree.io/f/xldlajka" method="POST" style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+      <input type="text" name="name" placeholder="اسمك الكامل" required 
+             style="padding: 12px; border-radius: 8px; border: none; background: #334155; color: white;">
+      <input type="text" name="contact" placeholder="رابط تواصل (واتساب أو انستغرام)" required
+             style="padding: 12px; border-radius: 8px; border: none; background: #334155; color: white;">
+      <textarea name="details" rows="5" placeholder="تفاصيل الحساب والسعر المطلوب" required
+                style="padding: 12px; border-radius: 8px; border: none; background: #334155; color: white;"></textarea>
+     
+      <button type="submit" 
+              style="background: linear-gradient(to right, #3b82f6, #0ea5e9); color: white; border: none; padding: 14px; border-radius: 10px; font-size: 16px; cursor: pointer;">
+        💾 إرسال الطلب
+      </button>
+    </form>
+
+  </div>
+</section>
+
+<!-- CSS للـ Hover -->
+<style>
+  .step-box {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .step-box:hover {
+    background: #334155;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+  #sell-request button:hover {
+    background: linear-gradient(to right, #0ea5e9, #3b82f6);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+</style>
+
+
+
+
+<!-- ======= Sell Request Section ======= -->
+<section id="sell-request" style="padding: 50px; background: #0f172a; color: #f8fafc;"> 
+  <div style="max-width: 900px; background: #14181e; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+    <h2 style="text-align: center; color: #38bdf8; font-size: 30px; margin-bottom: 20px;">
+      💼 طلب بيع حساب eFootball
+    </h2>
+    <p style="font-size: 18px; margin: 20px 0; line-height: 1.7; color: #e2e8f0;">
+      مع <strong style="color: #38bdf8;">eFootStore</strong> يمكنك بيع حسابك بكل أمان واحترافية! فقط املأ المعلومات، وسنتواصل معك لإتمام العملية بأفضل طريقة.
+    </p>
+
+       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px;">
+      <div class="step-box">✅ نوع الربط (كونامي ايدي - غوغل بلاي)</div>
+      <div class="step-box">⭐ التشكيلة (أبرز اللاعبين)</div>
+      <div class="step-box">🎮 القوة الجماعية</div>
+      <div class="step-box">💰 السعر المقترح للبيع</div>
+      <div class="step-box">📸 صور أو فيديو يوضح الحساب</div> <!-- خطوة جديدة اختيارية -->
+    </div>
+
+    <form id="sellForm" action="https://formspree.io/f/xldlajka" method="POST" style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+      <input type="text" name="name" placeholder="اسمك الكامل" required style="padding: 12px; border-radius: 8px; border: none; background: #334155; color: white;">
+      <input type="text" name="contact" placeholder="رابط تواصل (واتساب أو انستغرام)" required style="padding: 12px; border-radius: 8px; border: none; background: #334155; color: white;">
+      <textarea name="details" rows="5" placeholder="معلومات الحساب المطلوبة" required style="padding: 12px; border-radius: 8px; border: none; background: #334155; color: white;"></textarea>
+      <button type="submit" style="background: linear-gradient(to right, #3b82f6, #0ea5e9); color: white; border: none; padding: 14px; border-radius: 10px; font-size: 16px; cursor: pointer;">
+        💾 إرسال الطلب
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ======= Mediation Section ======= -->
+<section id="mediation" style="padding: 50px; background: #121212; color: #f0f0f0;">
+  <div style="max-width: 1000px; background: #1e1e1e; padding: 30px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+    <h2 style="text-align: center; color: #00bcd4; font-size: 30px; margin-bottom: 20px;">
+      🔁 خدمة الوساطة الآمنة
+    </h2>
+    <p style="font-size: 18px; margin: 20px 0; line-height: 1.7; color: #ccc; text-align: center;">
+      نحن في <strong style="color: #00bcd4;">eFootStore</strong> نضمن لك تجربة بيع وشراء آمنة لحسابات eFootball. لا تقلق بشأن الثقة، فنحن الوسيط الذي يحمي الطرفين بكل احترافية.
+    </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px;">
+      <div class="step-box2" style="background: #2a2a2a; padding: 15px; border-radius: 10px;">✅ يتفق الطرفان على السعر.</div>
+      <div class="step-box2" style="background: #2a2a2a; padding: 15px; border-radius: 10px;">💸 يرسل المشتري المبلغ إلينا.</div>
+      <div class="step-box2" style="background: #2a2a2a; padding: 15px; border-radius: 10px;">📤 يرسل البائع معلومات الحساب.</div>
+      <div class="step-box2" style="background: #2a2a2a; padding: 15px; border-radius: 10px;">📩 نقوم بتسليم الحساب للمشتري.</div>
+      <div class="step-box2" style="background: #2a2a2a; padding: 15px; border-radius: 10px;">💳 نرسل المال للبائع بعد التأكد.</div>
+    </div>
+
+    <form id="mediationForm" action="https://formspree.io/f/mrbbwkjd" method="POST" style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+      <input type="text" name="name" placeholder="اسمك الكامل" required style="padding: 12px; border-radius: 8px; border: none; background: #2a2a2a; color: white;">
+      <input type="text" name="contact" placeholder="رابط تواصل (واتساب أو فيسبوك)" required style="padding: 12px; border-radius: 8px; border: none; background: #2a2a2a; color: white;">
+      <textarea name="details" rows="5" placeholder="تفاصيل الصفقة" required style="padding: 12px; border-radius: 8px; border: none; background: #2a2a2a; color: white;"></textarea>
+      <button type="submit" style="background: linear-gradient(to right, #00bcd4, #0097a7); color: white; border: none; padding: 14px; border-radius: 10px; font-size: 16px; cursor: pointer;">
+        🚀 إرسال الطلب
+      </button>
+    </form>
+  </div>
+</section>
+
+
+
+<style>
+  .step-box2 {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .step-box2:hover {
+    background: #334155;
+    transform: translateY(-4px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+  #sell-request button:hover {
+    background: linear-gradient(to right, #0ea5e9, #3b82f6);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+</style>
+
+<!-- ======= JS to Handle Form Submissions ======= -->
+<script>
+async function handleFormSubmit(formId) {
+  const form = document.getElementById(formId);
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const res = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      alert("✅ تم إرسال طلبك بنجاح! سنتواصل معك قريباً.");
+      form.reset();
+    } else {
+      alert("❌ حدث خطأ أثناء الإرسال، حاول مرة أخرى.");
+    }
+  });
+}
+
+handleFormSubmit("sellForm");
+handleFormSubmit("mediationForm");
+</script>
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Logos -->
+    <div class="footer-logos">
+      <img src="efootstore.png" alt="eFootStore Logo" class="footer-logo">
+    </div>
+
+    <!-- Social Media Buttons -->
+    <div class="footer-social">
+      <a href="https://www.instagram.com/faissal_web?igsh=eWl0NXdlNHd2dnJ3" target="_blank" class="social-btn instagram">Instagram</a>
+      <a href="https://wa.me/212694569295" target="_blank" class="social-btn whatsapp">WhatsApp</a>
+      <a href="https://www.facebook.com/fc.faissal.2025" target="_blank" class="social-btn facebook">Facebook</a>
+      <a href="https://www.linkedin.com/in/faissal-legtob-ba7ba1340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-btn linkedin">LinkedIn</a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="footer-copy">© 2025 eFootStore. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- CSS -->
+<style>          
+</style>
+
+
+
+
+<!-- ======= Scripts ======= -->
+<!-- ======= السكريبتات ======= -->
+
+<div id="countdown"></div>
+
+<script>
+// تاريخ انتهاء العرض (ثابت)
+const countdownDate = new Date("Aug 27, 2025 23:59:59").getTime();
+const countdownElement = document.getElementById("countdown");
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = countdownDate - now;
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  if (distance > 0) {
+    countdownElement.innerHTML = `
+      <div>${days} يوم</div>
+      <div>${hours} ساعة</div>
+      <div>${minutes} دقيقة</div>
+      <div>${seconds} ثانية</div>
+    `;
+  } else {
+    countdownElement.innerHTML = "🎉 انتهى العرض!";
+    clearInterval(interval);
+  }
+}
+
+const interval = setInterval(updateCountdown, 1000);
+updateCountdown();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  // Hamburger animation toggle
+  document.addEventListener('DOMContentLoaded', function () {
+  var toggler = document.querySelector('.custom-hamburger');
+  var navCollapse = document.getElementById('navbarNav');
+  if (toggler) {
+    toggler.addEventListener('click', function () {
+    setTimeout(function () {
+      toggler.classList.toggle('active', navCollapse.classList.contains('show'));
+    }, 10);
+    });
+    navCollapse.addEventListener('hidden.bs.collapse', function () {
+    toggler.classList.remove('active');
+    });
+    navCollapse.addEventListener('shown.bs.collapse', function () {
+    toggler.classList.add('active');
+    });
+  }
+  });
+  // AOS Animation
+  AOS.init();
+  // Popup image functions (add your implementation in script.js)
+</script>
+<script src="script.js"></script>
+  <script>
+    // إخفاء شاشة التحميل بعد 3 ثواني
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.getElementById("loader").classList.add("hidden");
+        document.getElementById("content").classList.add("show");
+      }, 2500);
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
